@@ -56,8 +56,8 @@ class RgiIterator(hAMRonizedResultIterator):
             else:
                 # normal RGI mode
                 self.field_mapping = {
-                    'ORF_ID': None,
-                    'Contig': 'input_sequence_id',
+                    'ORF_ID': 'input_sequence_id',
+                    'Contig': None,
                     'Start': 'input_gene_start',
                     'Stop': 'input_gene_stop',
                     'Orientation': 'strand_orientation',
